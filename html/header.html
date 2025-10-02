@@ -6,57 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .menu>li {
-            list-style: none;
-            position: relative;
-            display: inline-block;
+        * {
+            font-family: 'Times New Roman', Times, serif;
         }
 
-        .menu {
+        body {
+            /* background-image: url(../img/image.png); */
+            background-color: #333;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        .head {
+            background-color: #222;
+            height: 100px;
+            text-align: center;
+            margin: 0 10px 0 10px;
+        }
+
+        .link {
+            background-color: #666;
+            height: auto;
+            margin: 0px 10px 10px 10px;
             display: flex;
-            gap: 20px;
         }
 
-        .menu li ul {
-            display: none;
-        }
-
-        .menu>li:hover>ul {
+        .link a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
             display: block;
+            height: 100%;
+        }
+
+        a:hover {
+            color: #333;
+            background-color: #4a4a4a;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 
 <body>
-    <div id="head">
-        <ul class="menu">
-            <li><a href=""><img src="/image-removebg-preview.png" alt="logo" width="150"></a></li>
-            <li><input type="text" placeholder="Tìm kiếm"></li>
-            <li><a href="">Chủ đề</a></li>
-            <li>Thể loại
-                <ul>
-                    <li><a href="#">Hành động</a></li>
-                    <li><a href="#">Tình cảm</a></li>
-                    <li><a href="#">Kinh dị</a></li>
-                    <li><a href="#">Hoạt hình</a></li>
-                    <li><a href="#">Hài hước</a></li>
-                </ul>
-            </li>
-            <li><a href="">Phim lẻ</a></li>
-            <li><a href="">Phim bộ</a></li>
-            <li><a href="">TV Shows</a></li>
-            <li>Quốc gia
-                <ul>
-                    <li><a href="#">Việt Nam</a></li>
-                    <li><a href="#">Hoa Kỳ</a></li>
-                    <li><a href="#">Trung Quốc</a></li>
-                    <li><a href="#">Hàn Quốc</a></li>
-                    <li><a href="#">Nhật Bản</a></li>
-                </ul>
-            </li>
-            <li><a href="">Diễn viên</a></li>
-            <li><button>Đăng nhập</button></li>
-        </ul>
+    <div class="head">
+        <h1 style="padding: 20px;">My website</h1>
+    </div>
+    <div class="link">
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
+        <a href="">Link</a>
     </div>
 </body>
 
